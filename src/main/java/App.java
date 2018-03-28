@@ -11,10 +11,9 @@ public class App {
 
         try {
             EquationsDatabase database = new EquationsDatabase();
-            database.insertEquation("3+3=5");
-            database.insertEquation("3+3=7");
 
-            System.out.println(database.getAllEquations());
+
+            System.out.println(database.getAllTimeStamps().toString());
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {

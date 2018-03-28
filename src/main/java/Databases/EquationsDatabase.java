@@ -1,6 +1,8 @@
 package Databases;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class EquationsDatabase extends Database{
     PreparedStatement equation;
@@ -34,11 +36,20 @@ public class EquationsDatabase extends Database{
         ResultSet tables = dbm.getTables(null, null, tableName, null);
         return tables.next();
     }
-    public String getAllEquations() throws SQLException {
-       return this.getAllEquationsSet(false).getString("InputString");
+    public ArrayList<String> getAllEquations() throws SQLException {
+      ArrayList<String> output = new ArrayList<>();
+       ResultSet results = this.getAllEquationsSet(false);
+       while(results.next()){
+           output.add(results.getString("InputString"));
+       }
+       return output;
     }
-    public Timestamp getAllTimeStamps() throws SQLException {
-        return this.getAllEquationsSet(true).getTimestamp("TimeEntered");
-
+    public HashMap<String, Timestamp> getAllTimeStamps() throws SQLException {
+        HashMap<String, Timestamp> output = new HashMap<>();
+        ResultSet results = this.getAllEquationsSet(true);
+        while(results.next()){
+            output.put(results.getString("InputString"),results.getTimestamp("TimeEntered"));
+        }
+        return output;
     }
 }
