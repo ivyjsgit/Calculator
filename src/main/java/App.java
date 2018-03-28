@@ -1,4 +1,5 @@
-import Databases.EquationsDatabase;
+import Databases.FunctionsDatabase;
+import Databases.HistoryDatabase;
 
 import java.sql.SQLException;
 
@@ -10,10 +11,13 @@ public class App {
     public static void main(String[] args) {
 
         try {
-            EquationsDatabase database = new EquationsDatabase();
+            HistoryDatabase database = new HistoryDatabase();
+            FunctionsDatabase functionsDB = new FunctionsDatabase(database.getCon());
 
-
-            System.out.println(database.getAllTimeStamps().toString());
+        database.insertEquation("3+3");
+        functionsDB.insertFunction("3");
+            System.out.println(database.getAllTimeStamps());
+            System.out.println(functionsDB.getAllFunctions());
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {

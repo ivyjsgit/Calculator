@@ -1,22 +1,21 @@
 package Databases;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 
-public class EquationsDatabase extends Database{
+public class HistoryDatabase {
     PreparedStatement equation;
     Connection con;
     Statement stat;
-    public EquationsDatabase() throws SQLException, ClassNotFoundException {
+    public HistoryDatabase() throws SQLException, ClassNotFoundException {
         Class.forName("org.sqlite.JDBC");
         con = DriverManager.getConnection("jdbc:sqlite:equationsdb");
         stat = con.createStatement();
 
-        if(!checkIfTableExists("Equations")) {
-            stat.execute("CREATE TABLE Equations( InputString VARCHAR(255), TimeEntered TIMESTAMP ); ");
+        if(!checkIfTableExists("History")) {
+            stat.execute("CREATE TABLE History( InputString VARCHAR(255), TimeEntered TIMESTAMP ); ");
         }
-        equation = con.prepareStatement("INSERT INTO Equations VALUES (?, CURRENT_TIMESTAMP);");
+        equation = con.prepareStatement("INSERT INTO History VALUES (?, CURRENT_TIMESTAMP);");
 
     }
     public void insertEquation(String equationSting) throws SQLException {
@@ -26,12 +25,12 @@ public class EquationsDatabase extends Database{
     private ResultSet getAllEquationsSet(boolean timestamp) throws SQLException {
         Statement statement = con.createStatement();
         if(timestamp){
-            return statement.executeQuery("SELECT * FROM Equations;");
+            return statement.executeQuery("SELECT * FROM History;");
         }else{
-            return statement.executeQuery("SELECT InputString FROM Equations;");
+            return statement.executeQuery("SELECT InputString FROM History;");
         }
     }
-    public boolean checkIfTableExists(String tableName) throws SQLException {
+    private boolean checkIfTableExists(String tableName) throws SQLException {
         DatabaseMetaData dbm = con.getMetaData();
         ResultSet tables = dbm.getTables(null, null, tableName, null);
         return tables.next();
@@ -44,12 +43,20 @@ public class EquationsDatabase extends Database{
        }
        return output;
     }
-    public HashMap<String, Timestamp> getAllTimeStamps() throws SQLException {
-        HashMap<String, Timestamp> output = new HashMap<>();
+    public Map<String, String> getAllTimeStamps() throws SQLException {
+        Map<String, String> output = new HashMap<>();
         ResultSet results = this.getAllEquationsSet(true);
         while(results.next()){
-            output.put(results.getString("InputString"),results.getTimestamp("TimeEntered"));
+            //Why is this a String?????? Should be a timestamp. If you replace this with getTimestamp it breaks.
+
+            String gottenTimestamp = results.getString("TimeEntered");
+
+            output.put(gottenTimestamp,results.getString("InputString"));
         }
         return output;
     }
+    public Connection getCon() {
+        return con;
+    }
+
 }
