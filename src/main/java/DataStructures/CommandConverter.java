@@ -36,7 +36,7 @@ public class CommandConverter {
 		}
 	}
 
-	private String handleFunctionApplication() {
+	private String handleFunctionApplication() throws ScriptException, SQLException {
 		FunctionApplicationContainer functionApplicationContainer = new FunctionApplicationContainer(command, databases);
 		return functionApplicationContainer.run();
 	}

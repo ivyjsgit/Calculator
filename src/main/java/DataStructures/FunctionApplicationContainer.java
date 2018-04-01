@@ -26,26 +26,8 @@ public class FunctionApplicationContainer {
 		
 		String result = databases.getFunctionApplication(functionDeclaration, newParameters);
 		/*
-		 * take the string and translate it into a list of some kind
-		 * with the function name and all of the parameters as different
-		 * elements
-		 * 	the issue is that I need to split on 
-		 * 
-		 * check to see if the selection has a function in it
-		 * 
-		 * if it does then 
-		 * 
-		 * 
-		 * ArrayList<String>function1nums = new ArrayList<String>();
-        function1nums.add("1");
-        function1nums.add("2");
-        ArrayList<String>function2nums = new ArrayList<String>();
-        function2nums.add("3");
-        function2nums.add("2");
-        
-        assertTrue(databases.getFunctionApplication(function1, function1nums).equals("3"));
-        assertTrue(databases.getFunctionApplication(function2, function2nums).equals("4"));
-	}
+		 * I need to add the ability to have a function application
+		 * on a function application.
 		 */
 		return result;
 	}
