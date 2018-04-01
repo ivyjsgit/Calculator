@@ -8,15 +8,13 @@ public class HistoryDatabase {
     Connection con;
     Statement stat;
     public HistoryDatabase() throws SQLException, ClassNotFoundException {
-        Class.forName("org.sqlite.JDBC");
+    	Class.forName("org.sqlite.JDBC");
         con = DriverManager.getConnection("jdbc:sqlite:equationsdb");
         stat = con.createStatement();
-
         if(!checkIfTableExists("History")) {
             stat.execute("CREATE TABLE History( InputString VARCHAR(255), TimeEntered TIMESTAMP ); ");
         }
         equation = con.prepareStatement("INSERT INTO History VALUES (?, CURRENT_TIMESTAMP);");
-
     }
     public void insertEquation(String equationSting) throws SQLException {
         equation.setString(1, equationSting);
@@ -31,7 +29,7 @@ public class HistoryDatabase {
         }
     }
     private boolean checkIfTableExists(String tableName) throws SQLException {
-        DatabaseMetaData dbm = con.getMetaData();
+    	DatabaseMetaData dbm = con.getMetaData();
         ResultSet tables = dbm.getTables(null, null, tableName, null);
         return tables.next();
     }
