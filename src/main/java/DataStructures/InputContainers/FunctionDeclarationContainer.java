@@ -1,4 +1,4 @@
-package DataStructures;
+package DataStructures.InputContainers;
 
 import java.sql.SQLException;
 

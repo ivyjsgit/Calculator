@@ -4,6 +4,11 @@ import java.sql.SQLException;
 
 import javax.script.ScriptException;
 
+import DataStructures.InputContainers.DatabaseContainer;
+import DataStructures.InputContainers.EquationContainer;
+import DataStructures.InputContainers.FunctionApplicationContainer;
+import DataStructures.InputContainers.FunctionDeclarationContainer;
+
 public class CommandConverter {
 
 	private String command;

@@ -1,11 +1,11 @@
-package DataStructures;
-
-import static org.junit.Assert.assertTrue;
+package DataStructures.InputContainers;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 
 import javax.script.ScriptException;
+
+import DataStructures.WhitespaceRemover;
 
 public class FunctionApplicationContainer {
 
@@ -13,18 +13,15 @@ public class FunctionApplicationContainer {
 	private DatabaseContainer databases;
 	
 	public FunctionApplicationContainer(String functionApplication, DatabaseContainer databases) {
-		this.functionApplication = functionApplication;
+		this.functionApplication = WhitespaceRemover.removeWhitespace(functionApplication);
 		this.databases = databases;
 	}
 	
 	public String run() throws ScriptException, SQLException {
 
-		String name = getName(functionApplication);
-		String functionDeclaration = databases.getFunction(name);
-		
+		String functionEquation = getFunction();
 		ArrayList<String> newParameters = getParameters(functionApplication);
-		
-		String result = databases.getFunctionApplication(functionDeclaration, newParameters);
+		String result = databases.getFunctionApplication(functionEquation, newParameters);
 		/*
 		 * I need to add the ability to have a function application
 		 * on a function application.
@@ -38,7 +35,6 @@ public class FunctionApplicationContainer {
 		for (int x = 1; x < splittedString.length; x++) {
 			result.add(splittedString[x]);
 		}
-
 		return result;
 	}
 
@@ -46,13 +42,10 @@ public class FunctionApplicationContainer {
 		String[] splittedFunction = function.split(" ");
 		return splittedFunction[0];
 	}
-
-	private String removeWhitespace(String equation) {
-		if (equation.charAt(0) == ' ') {
-			return removeWhitespace(equation.substring(1));
-		} else {
-			return equation;
-		}
+	
+	private String getFunction() throws SQLException {
+		String name = getName(functionApplication);
+		return databases.getFunction(name);
 	}
 	
 }

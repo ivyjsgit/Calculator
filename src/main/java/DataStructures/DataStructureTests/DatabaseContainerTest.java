@@ -9,7 +9,7 @@ import javax.script.ScriptException;
 
 import org.junit.Test;
 
-import DataStructures.DatabaseContainer;
+import DataStructures.InputContainers.DatabaseContainer;
 import Databases.FunctionsDatabase;
 import Databases.HistoryDatabase;
 

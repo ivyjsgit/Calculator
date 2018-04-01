@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import org.junit.Test;
 
 import DataStructures.CommandConverter;
-import DataStructures.DatabaseContainer;
+import DataStructures.InputContainers.DatabaseContainer;
 import Databases.FunctionsDatabase;
 import Databases.HistoryDatabase;
 

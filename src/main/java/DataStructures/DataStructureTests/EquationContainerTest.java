@@ -8,8 +8,8 @@ import javax.script.ScriptException;
 
 import org.junit.Test;
 
-import DataStructures.DatabaseContainer;
-import DataStructures.EquationContainer;
+import DataStructures.InputContainers.DatabaseContainer;
+import DataStructures.InputContainers.EquationContainer;
 import Databases.FunctionsDatabase;
 import Databases.HistoryDatabase;
 

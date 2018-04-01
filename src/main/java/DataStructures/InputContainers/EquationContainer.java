@@ -1,4 +1,4 @@
-package DataStructures;
+package DataStructures.InputContainers;
 
 import java.sql.SQLException;
 
@@ -19,6 +19,7 @@ public class EquationContainer {
 	public String run() throws ScriptException, SQLException {
 		
 		/*
+		 * I got the below code for evaluating the result of a string from
 		 * https://stackoverflow.com/questions/2605032/is-there-an-eval-function-in-java
 		 */
 		

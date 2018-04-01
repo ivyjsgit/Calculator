@@ -3,15 +3,13 @@ package DataStructures.DataStructureTests;
 import static org.junit.Assert.*;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
 
 import javax.script.ScriptException;
 
 import org.junit.Test;
 
-import DataStructures.DatabaseContainer;
-import DataStructures.EquationContainer;
-import DataStructures.FunctionApplicationContainer;
+import DataStructures.InputContainers.DatabaseContainer;
+import DataStructures.InputContainers.FunctionApplicationContainer;
 import Databases.FunctionsDatabase;
 import Databases.HistoryDatabase;
 
@@ -26,7 +24,7 @@ public class FunctionApplicationContainerTest {
         String function1 = "function 2 3";
         
         FunctionApplicationContainer application = new FunctionApplicationContainer(function1, database); 
-        System.out.println(application.run());
+        assertTrue(application.run().equals("5"));
 	}
 
 }
