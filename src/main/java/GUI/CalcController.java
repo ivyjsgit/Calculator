@@ -7,17 +7,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
-import java.io.FileNotFoundException;
 import java.sql.*;
 
 import javax.script.ScriptException;
 
-import org.sqlite.SQLiteException;
 
 import Databases.*;
 import DataStructures.*;
 import DataStructures.InputContainers.*;
-import DataStructures.InputContainers.InputAdders.*;
 
 public class CalcController {
 
