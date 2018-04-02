@@ -8,6 +8,8 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.Map;
 
 import javax.script.ScriptException;
 
@@ -43,9 +45,15 @@ public class CalcController {
 		  FunctionsDatabase functions = new FunctionsDatabase(history.getCon());
 		  databases.setHistoryDatabase(history);
 		  databases.setFunctionsDatabase(functions);
+		  Map<String,String> historyResults = history.getAllTimeStamps();
+		  for(String key: historyResults.keySet()){
+		  	calculations.add(historyResults.get(key) + ": " + key);
+		  }
+
 		} catch (ClassNotFoundException | SQLException e) {
 			System.exit(1);
 		}
+
 	}
 
 	public void userInput() {
