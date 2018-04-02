@@ -32,7 +32,7 @@ public class FunctionApplicationGetter {
 		}
 		ScriptEngineManager manager = new ScriptEngineManager();
 		ScriptEngine engine = manager.getEngineByName("js");
-		int result = (int) engine.eval(equation);
+		int result = (int) engine.eval(equation + ";");
 		return Integer.toString(result);
 	}
 

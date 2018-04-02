@@ -33,10 +33,7 @@ public class WhitespaceRemover {
 	}
 
 	private static String arrayToString(String[] splittedFunction) {
-		String result = "";
-		for (int x = 0; x < splittedFunction.length; x++) {
-			result = result + " " + splittedFunction[x];
-		}
+		String result = String.join(" ", splittedFunction);
 		return result.substring(1);
 	}
 

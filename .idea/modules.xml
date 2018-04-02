@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Calculator.iml" filepath="$PROJECT_DIR$/Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Calculator_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Calculator_main.iml" group="Calculator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Calculator_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Calculator_test.iml" group="Calculator" />
     </modules>
   </component>
 </project>

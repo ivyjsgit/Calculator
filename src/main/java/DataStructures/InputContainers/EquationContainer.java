@@ -16,7 +16,7 @@ public class EquationContainer {
 		this.databases = databases;
 	}
 	
-	public String run() throws ScriptException, SQLException {
+	public String run() throws ScriptException, SQLException, ArrayIndexOutOfBoundsException {
 		
 		/*
 		 * I got the below code for evaluating the result of a string from
