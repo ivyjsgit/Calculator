@@ -20,6 +20,8 @@ mainClassName = 'App'
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
     compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.7.2'
+    compile 'junit:junit:4.12'
+
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
 }
