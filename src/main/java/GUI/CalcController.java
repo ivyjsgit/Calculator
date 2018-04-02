@@ -44,7 +44,7 @@ public class CalcController {
 		  databases.setHistoryDatabase(history);
 		  databases.setFunctionsDatabase(functions);
 		} catch (ClassNotFoundException | SQLException e) {
-			e.printStackTrace();
+			System.exit(1);
 		}
 	}
 
