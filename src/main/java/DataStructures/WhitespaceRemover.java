@@ -1,26 +1,18 @@
 package DataStructures;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class WhitespaceRemover {
 
 	public static String removeAllWhitespace(String equation) {
-		String[] splittedEquation = equation.split("");
-		ArrayList<String> result = new ArrayList<String>();
-		for (int x = 0; x < splittedEquation.length; x++) {
-			if (!splittedEquation[x].equals(" ")) {
-				result.add(splittedEquation[x]);
-			}
-		}
-		return listToString(result);
+		return equation.replaceAll(" ", "");
 	}
 
 	private static String listToString(ArrayList<String> list) {
-		String result = "";
-		for (int x = 0; x < list.size(); x++) {
-			result = result + list.get(x);
-		}
-		return result;
+        String output = Arrays.toString(list.toArray()).replace("[", "").replace("]", "");
+		output.replaceAll(",", "");
+		return output;
 	}
 	
 	public static String removeExtraWhitespace(String function) {

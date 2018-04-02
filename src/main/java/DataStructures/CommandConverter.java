@@ -20,11 +20,7 @@ public class CommandConverter {
 	}
 	
 	public Boolean checkForFunctionDeclaration() {
-		if (command.contains("=")) {
-			return true;
-		} else {
-			return false;
-		}
+		return (command.contains("="));
 	}
 
 	public String run() throws ScriptException, SQLException {
