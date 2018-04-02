@@ -15,7 +15,7 @@ public class Calc extends Application {
 		try {
 			//if this is on a Mac
 			BorderPane root;
-
+			//For some reason, you need a Resources folder to work with Mac? It crashes without you having one because it looks in there first I guess
 			if(System.getProperty("os.name").startsWith("Mac")) {
 				 root = FXMLLoader.load(getClass().getResource("/CalcGUI.fxml"));
 			}else{
