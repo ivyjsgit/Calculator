@@ -22,6 +22,14 @@ public class DatabaseContainer {
 		this.functions = functions;
 	}
 
+	public void setHistoryDatabase(HistoryDatabase history){
+		this.history = history;
+	}
+
+	public void setFunctionsDatabase(FunctionsDatabase functions) {
+		this.functions = functions;
+	}
+
 	public void addEquation(String equation) throws SQLException {
 		new EquationAdder(equation, history);
 	}
@@ -34,7 +42,7 @@ public class DatabaseContainer {
 	public void addFunction(String function) throws SQLException {
 		new FunctionAdder(function, functions);
 	}
-	
+
 	public String getFunction(String functionName) throws SQLException {
 		String result = "";
 		ArrayList<String> allFunctions = functions.getAllFunctions();
@@ -70,8 +78,8 @@ public class DatabaseContainer {
 		str = WhitespaceRemover.removeAllWhitespace(str);
 		return str;
 	}
-	
-	
+
+
 	public String getFunctionApplication(String name, ArrayList<String> parameters) throws ScriptException {
 		ArrayList<String> paremVariables = getParameters(name);
 		String equation = getEquation(name);

@@ -12,6 +12,8 @@ import java.sql.*;
 
 import javax.script.ScriptException;
 
+import org.sqlite.SQLiteException;
+
 import Databases.*;
 import DataStructures.*;
 import DataStructures.InputContainers.*;
@@ -29,18 +31,24 @@ public class CalcController {
 	private TextField input;
 
 	@FXML
-	private Button solver;
+	private Button enter;
 
 	private String userEntered;
 
-	/*
-	 * HistoryDatabase history = new HistoryDatabase(); FunctionsDatabase
-	 * functions = new FunctionsDatabase(history.getCon()); DatabaseContainer
-	 * databases = new DatabaseContainer(history, functions);
-	 */
+	DatabaseContainer databases = new DatabaseContainer(null, null);
+
 
 	public void initialize() {
 		info.setItems(calculations);
+
+		try {
+		  HistoryDatabase history = new HistoryDatabase();
+		  FunctionsDatabase functions = new FunctionsDatabase(history.getCon());
+		  databases.setHistoryDatabase(history);
+		  databases.setFunctionsDatabase(functions);
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void userInput() {
@@ -49,9 +57,6 @@ public class CalcController {
 
 	public void calculate() throws ClassNotFoundException, SQLException, ScriptException {
 		userInput();
-		HistoryDatabase history = new HistoryDatabase();
-		FunctionsDatabase functions = new FunctionsDatabase(history.getCon());
-		DatabaseContainer databases = new DatabaseContainer(history, functions);
 		CommandConverter converter = new CommandConverter(userEntered, databases);
 		String result = converter.run();
 		calculations.add(result);

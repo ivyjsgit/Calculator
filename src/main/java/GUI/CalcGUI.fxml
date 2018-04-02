@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CalcController">
+<BorderPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CalcController">
    <top>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
@@ -28,9 +29,12 @@
       </VBox>
    </top>
    <center>
-      <TextField fx:id="input" alignment="CENTER" promptText="Input" BorderPane.alignment="CENTER" />
+      <TextField fx:id="input" alignment="CENTER" prefHeight="125.0" prefWidth="125.0" promptText="Input" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
    </center>
    <left>
-      <Button fx:id="solver" mnemonicParsing="false" onAction="#calculate" text="Solve" BorderPane.alignment="CENTER" />
+      <Button fx:id="enter" mnemonicParsing="false" onAction="#calculate" prefHeight="125.0" prefWidth="75.0" text="Enter" BorderPane.alignment="CENTER" />
    </left>
 </BorderPane>
