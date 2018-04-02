@@ -39,6 +39,8 @@ public class CommandConverterTest {
 		assertTrue(check5.checkForEquation() == true);
 		assertTrue(check5.checkForFunctionApplication() == false);
 		assertTrue(check5.checkForFunctionDeclaration() == false);
+		databases.close();
+
 	}
 
 }

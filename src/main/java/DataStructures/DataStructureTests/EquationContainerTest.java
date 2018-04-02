@@ -38,6 +38,7 @@ public class EquationContainerTest {
 		
 		EquationContainer check6 = new EquationContainer("6/3", databases);
 		assertTrue(check6.run().equals("2"));
+		databases.close();
 	}
 
 }

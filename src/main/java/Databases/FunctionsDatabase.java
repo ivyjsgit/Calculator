@@ -44,4 +44,7 @@ public class FunctionsDatabase {
         }
         return output;
     }
+    public void closeCon() throws SQLException {
+        con.close();
+    }
 }

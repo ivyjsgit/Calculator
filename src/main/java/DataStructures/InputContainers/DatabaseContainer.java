@@ -86,5 +86,9 @@ public class DatabaseContainer {
 		FunctionApplicationGetter getFunctionApplication = new FunctionApplicationGetter(equation, parameters, paremVariables);
 		return getFunctionApplication.run();
 	}
+	public void close() throws SQLException {
+		history.closeCon();
+		functions.closeCon();
+	}
 
 }

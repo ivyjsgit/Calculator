@@ -31,20 +31,6 @@ public class Calc extends Application {
 		}
 	}
 
-            if (System.getProperty("os.name").startsWith("Mac")) {
-                root = FXMLLoader.load(getClass().getResource("/CalcGUI.fxml"));
-            } else {
-                root = FXMLLoader.load(getClass().getResource("CalcGUI.fxml"));
-
-            }
-            Scene scene = new Scene(root);
-            primaryStage.setScene(scene);
-            primaryStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.exit(1);
-        }
-    }
 
     public static void main(String[] args) {
         launch(args);

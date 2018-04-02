@@ -63,6 +63,8 @@ public class DatabaseContainerTest {
         
         assertTrue(databases.getFunctionApplication(function1, function1nums).equals("3"));
         assertTrue(databases.getFunctionApplication(function2, function2nums).equals("4"));
-	}
+            databases.close();
+
+    }
 	
 }

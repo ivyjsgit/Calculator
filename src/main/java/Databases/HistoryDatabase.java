@@ -56,5 +56,8 @@ public class HistoryDatabase {
     public Connection getCon() {
         return con;
     }
+    public void closeCon() throws SQLException {
+        con.close();
+    }
 
 }

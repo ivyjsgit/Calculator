@@ -25,6 +25,8 @@ public class FunctionApplicationContainerTest {
         
         FunctionApplicationContainer application = new FunctionApplicationContainer(function1, database); 
         assertTrue(application.run().equals("5"));
-	}
+        database.close();
+
+    }
 
 }
