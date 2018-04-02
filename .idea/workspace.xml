@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c8f88e2-b999-4314-b5f9-f248898343f4" name="Default" comment="">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/equationsdb" afterPath="$PROJECT_DIR$/equationsdb" />
 =======
       <change beforePath="$PROJECT_DIR$/out/production/classes/App.class" afterPath="" />
 >>>>>>> master
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/equationsdb" afterPath="$PROJECT_DIR$/equationsdb" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/CalcController.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/CalcController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,7 +34,10 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="CommandConverter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/CommandConverter.java">
@@ -62,6 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/DatabaseContainer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
+<<<<<<< Updated upstream
               <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="21" />
               <folding />
             </state>
@@ -115,6 +124,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/DatabaseContainer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
+=======
+>>>>>>> Stashed changes
               <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="21" />
               <folding />
             </state>
@@ -123,6 +134,7 @@
       </file>
       <file leaf-file-name="EquationAdder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/InputAdders/EquationAdder.java">
+<<<<<<< HEAD
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -147,6 +159,7 @@
             <state relative-caret-position="60">
               <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
+<<<<<<< HEAD
             </state>
           </provider>
         </entry>
@@ -164,12 +177,43 @@
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
       <file leaf-file-name="CalcGUI.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Resources/CalcGUI.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
           </provider>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< Updated upstream
+      <file leaf-file-name="CalcController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/CalcController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="70" column="30" lean-forward="false" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="30" />
+              <folding>
+                <element signature="e#1229#1230#0" expanded="true" />
+                <element signature="e#1265#1266#0" expanded="true" />
+=======
+=======
+>>>>>>> Stashed changes
+      <file leaf-file-name="CalcController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/CalcController.java">
+          <provider selected="true" editor-type-id="text-editor">
+=======
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -181,21 +225,18 @@
       <file leaf-file-name="CalcController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/GUI/CalcController.java">
           <provider selected="true" editor-type-id="text-editor">
+>>>>>>> 0aa4f3d... Added viewing history on launch
             <state relative-caret-position="317">
               <caret line="70" column="30" lean-forward="false" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="30" />
               <folding>
-                <element signature="e#1229#1230#0" expanded="true" />
-                <element signature="e#1265#1266#0" expanded="true" />
-=======
-      <file leaf-file-name="CalcController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/CalcController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding>
+<<<<<<< Updated upstream
                 <element signature="e#1333#1334#0" expanded="true" />
                 <element signature="e#1369#1370#0" expanded="true" />
 >>>>>>> master
+=======
+                <element signature="e#1229#1230#0" expanded="true" />
+                <element signature="e#1265#1266#0" expanded="true" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -204,11 +245,15 @@
       <file leaf-file-name="HistoryDatabase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Databases/HistoryDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             <state relative-caret-position="825">
 =======
             <state relative-caret-position="513">
 >>>>>>> master
+=======
+            <state relative-caret-position="825">
+>>>>>>> Stashed changes
               <caret line="58" column="3" lean-forward="false" selection-start-line="58" selection-start-column="3" selection-end-line="60" selection-end-column="5" />
               <folding>
                 <marker date="1522700488609" expanded="true" signature="456:527" ph="CREATE TABLE... History" />
@@ -929,11 +974,15 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="2157000" />
 =======
     <option name="totallyTimeSpent" value="1852000" />
 >>>>>>> master
+=======
+    <option name="totallyTimeSpent" value="2157000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1181,6 +1230,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/App.java" />
 =======
@@ -1204,6 +1254,9 @@
       </provider>
     </entry>
 >>>>>>> master
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java" />
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1406,11 +1459,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/DatabaseContainer.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         <state relative-caret-position="345">
 =======
         <state relative-caret-position="23">
 >>>>>>> master
+=======
+        <state relative-caret-position="345">
+>>>>>>> Stashed changes
           <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="21" />
           <folding />
         </state>
@@ -1451,6 +1508,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/Databases/HistoryDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1494,9 +1552,11 @@
             <element signature="e#979#980#0" expanded="true" />
             <element signature="e#1007#1008#0" expanded="true" />
 =======
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/src/main/java/Databases/HistoryDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
+        <state relative-caret-position="825">
           <caret line="58" column="3" lean-forward="false" selection-start-line="58" selection-start-column="3" selection-end-line="60" selection-end-column="5" />
           <folding>
             <marker date="1522700488609" expanded="true" signature="456:527" ph="CREATE TABLE... History" />
@@ -1508,8 +1568,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Resources/CalcGUI.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/Calc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="17" column="150" lean-forward="false" selection-start-line="17" selection-start-column="150" selection-end-line="17" selection-end-column="150" />
+          <folding>
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/CalcController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         <state relative-caret-position="317">
           <caret line="70" column="30" lean-forward="false" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="30" />
@@ -1523,6 +1606,13 @@
             <element signature="e#1333#1334#0" expanded="true" />
             <element signature="e#1369#1370#0" expanded="true" />
 >>>>>>> master
+=======
+        <state relative-caret-position="317">
+          <caret line="70" column="30" lean-forward="false" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="30" />
+          <folding>
+            <element signature="e#1229#1230#0" expanded="true" />
+            <element signature="e#1265#1266#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
