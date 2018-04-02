@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93e7d688-342f-4402-8b95-dacced594171" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change beforePath="$PROJECT_DIR$/equationsdb" afterPath="$PROJECT_DIR$/equationsdb" />
@@ -11,6 +12,38 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/EquationContainer.java" afterPath="$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/EquationContainer.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/InputAdders/FunctionApplicationGetter.java" afterPath="$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/InputAdders/FunctionApplicationGetter.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DataStructures/WhitespaceRemover.java" afterPath="$PROJECT_DIR$/src/main/java/DataStructures/WhitespaceRemover.java" />
+=======
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/Resources/CalcGUI.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/CalcGUI.fxml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a6480ee4-be86-43f1-a0cf-b564fdb15a72.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a6480ee4-be86-43f1-a0cf-b564fdb15a72/storage_v2/_src_/schema/main.uQUzAA.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Calculator_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/Calculator_main.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Calculator_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/Calculator_test.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Calculator.iml" afterPath="$PROJECT_DIR$/Calculator.iml" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/App.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/DataStructures/CommandConverter.class" afterPath="$PROJECT_DIR$/out/production/classes/DataStructures/CommandConverter.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/DataStructures/DataStructureTests/CommandConverterTest.class" afterPath="$PROJECT_DIR$/out/production/classes/DataStructures/DataStructureTests/CommandConverterTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/DataStructures/DataStructureTests/DatabaseContainerTest.class" afterPath="$PROJECT_DIR$/out/production/classes/DataStructures/DataStructureTests/DatabaseContainerTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/DataStructures/DataStructureTests/EquationContainerTest.class" afterPath="$PROJECT_DIR$/out/production/classes/DataStructures/DataStructureTests/EquationContainerTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/DataStructures/DataStructureTests/FunctionApplicationContainerTest.class" afterPath="$PROJECT_DIR$/out/production/classes/DataStructures/DataStructureTests/FunctionApplicationContainerTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/DataStructures/InputContainers/DatabaseContainer.class" afterPath="$PROJECT_DIR$/out/production/classes/DataStructures/InputContainers/DatabaseContainer.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/DataStructures/InputContainers/EquationContainer.class" afterPath="$PROJECT_DIR$/out/production/classes/DataStructures/InputContainers/EquationContainer.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/DataStructures/InputContainers/FunctionApplicationContainer.class" afterPath="$PROJECT_DIR$/out/production/classes/DataStructures/InputContainers/FunctionApplicationContainer.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/DataStructures/InputContainers/FunctionDeclarationContainer.class" afterPath="$PROJECT_DIR$/out/production/classes/DataStructures/InputContainers/FunctionDeclarationContainer.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/DataStructures/InputContainers/InputAdders/EquationAdder.class" afterPath="$PROJECT_DIR$/out/production/classes/DataStructures/InputContainers/InputAdders/EquationAdder.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/DataStructures/InputContainers/InputAdders/FunctionAdder.class" afterPath="$PROJECT_DIR$/out/production/classes/DataStructures/InputContainers/InputAdders/FunctionAdder.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/DataStructures/InputContainers/InputAdders/FunctionApplicationGetter.class" afterPath="$PROJECT_DIR$/out/production/classes/DataStructures/InputContainers/InputAdders/FunctionApplicationGetter.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/DataStructures/WhitespaceRemover.class" afterPath="$PROJECT_DIR$/out/production/classes/DataStructures/WhitespaceRemover.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Databases/FunctionsDatabase.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Databases/HistoryDatabase.class" afterPath="" />
+>>>>>>> master
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/Calc.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/Calc.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -50,43 +83,72 @@
       <file leaf-file-name="CommandConverter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/CommandConverter.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-709">
+=======
+            <state relative-caret-position="60">
+>>>>>>> master
               <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="EquationAdder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/InputAdders/EquationAdder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="49">
               <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+=======
+      <file leaf-file-name="WhitespaceRemover.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/WhitespaceRemover.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-411">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="FunctionAdder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/InputAdders/FunctionAdder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
               <caret line="12" column="71" lean-forward="false" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+=======
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="FunctionApplicationGetter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/InputAdders/FunctionApplicationGetter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="159">
               <caret line="34" column="52" lean-forward="false" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+=======
+      <file leaf-file-name="CalcController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/CalcController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-306">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,16 +166,69 @@
               <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+=======
+      <file leaf-file-name="Calc.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/Calc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+              <folding>
+                <element signature="e#807#808#0" expanded="true" />
+                <element signature="e#826#827#0" expanded="true" />
+>>>>>>> master
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="EquationContainerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/DataStructureTests/EquationContainerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+=======
+      <file leaf-file-name="CalcGUI.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Resources/CalcGUI.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> master
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="FunctionApplicationContainerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/DataStructureTests/FunctionApplicationContainerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+=======
+      <file leaf-file-name="CalcGUI.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/CalcGUI.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalcGUI.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CalcGUI.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,7 +237,8 @@
       <file leaf-file-name="FunctionApplicationContainerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/DataStructureTests/FunctionApplicationContainerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
+            <state relative-caret-position="240">
+>>>>>>> master
               <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -131,6 +247,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="CommandConverterTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/DataStructureTests/CommandConverterTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -147,6 +264,16 @@
             <state relative-caret-position="60">
               <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
+=======
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+>>>>>>> master
             </state>
           </provider>
         </entry>
@@ -365,8 +492,13 @@
     <option name="modificationStamps">
       <map>
         <entry key="$USER_HOME$/.gradle/gradle.properties" value="2963252882" />
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$" value="6086147062000" />
         <entry key="$PROJECT_DIR$/build.gradle" value="2222547252" />
+=======
+        <entry key="$PROJECT_DIR$" value="6086144695000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="575318879" />
+>>>>>>> master
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2958664235" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="781253505" />
       </map>
@@ -559,12 +691,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/GUI/Calc.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/InputAdders/FunctionAdder.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/EquationContainer.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataStructures/WhitespaceRemover.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/InputAdders/FunctionApplicationGetter.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+=======
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/Calc.java" />
+>>>>>>> master
       </list>
     </option>
   </component>
@@ -632,6 +769,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Databases" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
             <path>
               <item name="Calculator" type="b2602c69:ProjectViewProjectNode" />
               <item name="Calculator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
@@ -640,20 +778,27 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
             </path>
+=======
+>>>>>>> master
             <path>
               <item name="Calculator" type="b2602c69:ProjectViewProjectNode" />
               <item name="Calculator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
               <item name="DataStructureTests" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+>>>>>>> master
             </path>
             <path>
               <item name="Calculator" type="b2602c69:ProjectViewProjectNode" />
               <item name="Calculator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+<<<<<<< HEAD
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
               <item name="InputContainers" type="462c0819:PsiDirectoryNode" />
@@ -681,6 +826,8 @@
               <item name="Calculator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+=======
+>>>>>>> master
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -843,14 +990,23 @@
       <item index="1" class="java.lang.String" itemvalue="JUnit.CommandConverterTest" />
     </list>
     <recent_temporary>
+<<<<<<< HEAD
       <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Application.Calc" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.CommandConverterTest" />
+=======
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Calc" />
+>>>>>>> master
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
+<<<<<<< HEAD
     <option name="lastUpdateTimestamp" value="1522684617748" />
+=======
+    <option name="lastUpdateTimestamp" value="1522682252528" />
+>>>>>>> master
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -868,7 +1024,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522681813983</updated>
+<<<<<<< HEAD
       <workItem from="1522681819924" duration="2685000" />
+=======
+      <workItem from="1522681819924" duration="1077000" />
+>>>>>>> master
     </task>
     <servers />
   </component>
@@ -884,7 +1044,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="2685000" />
+=======
+    <option name="totallyTimeSpent" value="1077000" />
+>>>>>>> master
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="825" extended-state="0" />
@@ -937,6 +1101,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/CalcGUI.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -944,10 +1109,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/CommandConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/Resources/CalcGUI.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -966,12 +1138,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/WhitespaceRemover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-411">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/CalcController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-306">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
@@ -1001,10 +1180,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-291">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+=======
+        <state relative-caret-position="75">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/EquationContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1057,10 +1241,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="12" column="71" lean-forward="false" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/DataStructureTests/FunctionApplicationContainerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CalcGUI.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/InputContainers/InputAdders/FunctionApplicationGetter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -1098,6 +1312,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataStructures/DataStructureTests/DatabaseContainerTest.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/Resources/CalcGUI.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/CalcGUI.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+>>>>>>> master
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
@@ -1105,6 +1336,28 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/CalcController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/Calc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <folding>
+            <element signature="e#807#808#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> master
   </component>
   <component name="masterDetails">
     <states>
