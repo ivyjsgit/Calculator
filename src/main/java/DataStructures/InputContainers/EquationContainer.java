@@ -25,11 +25,11 @@ public class EquationContainer {
 		
 		ScriptEngineManager manager = new ScriptEngineManager();
 		ScriptEngine engine = manager.getEngineByName("js");
-		int result = (int) engine.eval(equation);
+		double result = (double) engine.eval(equation);
 		
 		databases.addEquation(equation);
 		
-		return Integer.toString(result);
+		return Double.toString(result);
 	}
 
 }

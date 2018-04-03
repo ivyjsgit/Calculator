@@ -90,5 +90,14 @@ public class DatabaseContainer {
 		history.closeCon();
 		functions.closeCon();
 	}
+	
+	public void dropEverything() throws SQLException {
+		history.dropEverything();
+		functions.dropEverything();
+	}
+	
+	public ArrayList<String> getAllFunctions() throws SQLException {
+		return functions.getAllFunctions();
+	}
 
 }

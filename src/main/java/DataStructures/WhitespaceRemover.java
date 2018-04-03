@@ -30,13 +30,16 @@ public class WhitespaceRemover {
 	}
 
 	public static String removeWhitespace(String str) {
+		System.out.println(str);
 		if (str.charAt(0) == ' ') {
 			str = removeWhitespace(str.substring(1));
 		} else if (str.charAt(str.length() - 1) == ' ') {
 			str = removeWhitespace(str.substring(0, str.length() - 1));
 		} else {
+			System.out.println(str);
 			return str;
 		}
+		System.out.println(str);
 		return str;
 	}
 	

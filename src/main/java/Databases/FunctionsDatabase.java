@@ -13,12 +13,10 @@ public class FunctionsDatabase {
         Class.forName("org.sqlite.JDBC");
         this.con = con;
         stat = this.con.createStatement();
-
         if (!checkIfTableExists("Functions")) {
             stat.execute("CREATE TABLE Functions( Function VARCHAR(255)); ");
         }
         equation = con.prepareStatement("INSERT INTO Functions VALUES (?);");
-
     }
 
     public boolean checkIfTableExists(String tableName) throws SQLException {
@@ -35,16 +33,18 @@ public class FunctionsDatabase {
     public ArrayList<String> getAllFunctions() throws SQLException {
         ArrayList<String> output = new ArrayList<>();
         Statement statement = con.createStatement();
-
-
         ResultSet results = statement.executeQuery("SELECT * FROM Functions;");
-
         while (results.next()) {
             output.add(results.getString("Function"));
         }
         return output;
     }
+    
     public void closeCon() throws SQLException {
         con.close();
+    }
+    public void dropEverything() throws SQLException{
+        equation = con.prepareStatement("DELETE * FROM TABLE Functions");
+        equation.execute();
     }
 }

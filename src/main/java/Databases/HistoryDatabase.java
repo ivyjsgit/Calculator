@@ -59,5 +59,9 @@ public class HistoryDatabase {
     public void closeCon() throws SQLException {
         con.close();
     }
+    public void dropEverything() throws SQLException{
+        equation = con.prepareStatement("DELETE * FROM TABLE History");
+        equation.execute();
+    }
 
 }

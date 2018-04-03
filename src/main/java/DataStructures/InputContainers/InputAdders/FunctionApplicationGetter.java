@@ -32,8 +32,8 @@ public class FunctionApplicationGetter {
 		}
 		ScriptEngineManager manager = new ScriptEngineManager();
 		ScriptEngine engine = manager.getEngineByName("js");
-		int result = (int) engine.eval(equation + ";");
-		return Integer.toString(result);
+		double result = (double) engine.eval(equation + ";");
+		return Double.toString(result);
 	}
 
 	private String replace(String equation, String replacement, String variable) {
