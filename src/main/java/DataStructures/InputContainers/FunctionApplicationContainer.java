@@ -13,7 +13,9 @@ public class FunctionApplicationContainer {
 	private DatabaseContainer databases;
 	
 	public FunctionApplicationContainer(String functionApplication, DatabaseContainer databases) {
+		System.out.println(functionApplication);
 		this.functionApplication = WhitespaceRemover.removeWhitespace(functionApplication);
+		System.out.println(functionApplication);
 		this.databases = databases;
 	}
 	

@@ -26,20 +26,17 @@ public class WhitespaceRemover {
 
 	private static String arrayToString(String[] splittedFunction) {
 		String result = String.join(" ", splittedFunction);
-		return result.substring(1);
+		return result;
 	}
 
 	public static String removeWhitespace(String str) {
-		System.out.println(str);
 		if (str.charAt(0) == ' ') {
 			str = removeWhitespace(str.substring(1));
 		} else if (str.charAt(str.length() - 1) == ' ') {
 			str = removeWhitespace(str.substring(0, str.length() - 1));
 		} else {
-			System.out.println(str);
 			return str;
 		}
-		System.out.println(str);
 		return str;
 	}
 	

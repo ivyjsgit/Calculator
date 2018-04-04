@@ -13,7 +13,6 @@ public class FunctionAdder {
 	public FunctionAdder(String function, FunctionsDatabase functions) throws SQLException {
 		this.function = function;
 		this.functions = functions;
-		
 		function = WhitespaceRemover.removeExtraWhitespace(function);
 		if (!checkFunctionInDatabase(function)) {
 			functions.insertFunction(function);
