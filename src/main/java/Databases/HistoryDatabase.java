@@ -60,7 +60,7 @@ public class HistoryDatabase {
         con.close();
     }
     public void dropEverything() throws SQLException{
-        equation = con.prepareStatement("DELETE * FROM TABLE History");
+        equation = con.prepareStatement("DELETE FROM History");
         equation.execute();
     }
 

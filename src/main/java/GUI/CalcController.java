@@ -1,5 +1,8 @@
 package GUI;
 
+import com.github.daytron.simpledialogfx.data.DialogStyle;
+import com.github.daytron.simpledialogfx.dialog.Dialog;
+import com.github.daytron.simpledialogfx.dialog.DialogType;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -59,12 +62,25 @@ public class CalcController {
 		userEntered = input.getText();
 	}
 
-	public void calculate() throws SQLException, ScriptException {
-		userInput();
-		CommandConverter converter = new CommandConverter(userEntered, databases);
-		String result = converter.run();
-		calculations.add(result);
-		input.clear();
+	public void calculate() {
+		try {
+			userInput();
+			CommandConverter converter = new CommandConverter(userEntered, databases);
+			String result = converter.run();
+			calculations.add(result);
+			input.clear();
+		}catch (ScriptException e){
+			//https://github.com/Daytron/SimpleDialogFX
+			System.out.println(e);
+            Dialog  errorMessage = new Dialog(DialogStyle.HEADLESS,"An error has occurred. Please show this to the developers", e);
+            errorMessage.show();
+		}catch (ArrayIndexOutOfBoundsException e){
+		    Dialog errorMessage = new Dialog(DialogType.ERROR, DialogStyle.HEADLESS, "An error has occurred", "Error, function is not defined. Please define the function");
+            errorMessage.show();
+        }catch (SQLException e){
+            Dialog  errorMessage = new Dialog(DialogStyle.HEADLESS,"An error has occurred. Please show this to the developers", e);
+            errorMessage.show();
+        }
 
 	}
 	public void setUpHistory(HistoryDatabase history) throws SQLException {

@@ -26,6 +26,8 @@ public class FunctionsDatabase {
     }
 
     public void insertFunction(String function) throws SQLException {
+        System.out.println(function);
+        equation = con.prepareStatement("INSERT INTO Functions VALUES (?);");
         equation.setString(1, function);
         equation.execute();
     }
@@ -44,7 +46,7 @@ public class FunctionsDatabase {
         con.close();
     }
     public void dropEverything() throws SQLException{
-        equation = con.prepareStatement("DELETE * FROM TABLE Functions");
+        equation = con.prepareStatement("DELETE FROM Functions");
         equation.execute();
     }
 }
