@@ -5,22 +5,27 @@ import com.github.daytron.simpledialogfx.dialog.Dialog;
 import com.github.daytron.simpledialogfx.dialog.DialogType;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
+import java.awt.event.ActionEvent;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
 import javax.script.ScriptException;
+import javax.swing.*;
 
 
 import Databases.*;
 import DataStructures.*;
 import DataStructures.InputContainers.*;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 
 public class CalcController {
 
@@ -52,10 +57,20 @@ public class CalcController {
 		  setUpHistory(history);
 
 		} catch (ClassNotFoundException | SQLException e) {
-			e.printStackTrace();
-			System.exit(1);
+            Dialog  errorMessage = new Dialog(DialogStyle.HEADLESS,"An error has occurred. Please show this to the developers", e);
+            errorMessage.show();
 		}
 
+        //https://stackoverflow.com/a/25252616
+        input.setOnKeyPressed(new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent keyEvent) {
+                if (keyEvent.getCode() == KeyCode.ENTER)  {
+                    calculate();
+                    input.setText("");
+                }
+            }
+        });
 	}
 
 	public void userInput() {
@@ -69,26 +84,31 @@ public class CalcController {
 			String result = converter.run();
 			calculations.add(result);
 			input.clear();
-		}catch (ScriptException e){
-			//https://github.com/Daytron/SimpleDialogFX
-			System.out.println(e);
-            Dialog  errorMessage = new Dialog(DialogStyle.HEADLESS,"An error has occurred. Please show this to the developers", e);
-            errorMessage.show();
 		}catch (ArrayIndexOutOfBoundsException e){
 		    Dialog errorMessage = new Dialog(DialogType.ERROR, DialogStyle.HEADLESS, "An error has occurred", "Error, function is not defined. Please define the function");
             errorMessage.show();
-        }catch (SQLException e){
+        }catch (IndexOutOfBoundsException e) {
+            Dialog errorMessage = new Dialog(DialogType.ERROR, DialogStyle.HEADLESS, "An error has occurred", "Parameters do not match function definition. Please check your parameters.");
+            errorMessage.show();
+        }catch (Exception e){
+            //https://github.com/Daytron/SimpleDialogFX
+            System.out.println(e);
             Dialog  errorMessage = new Dialog(DialogStyle.HEADLESS,"An error has occurred. Please show this to the developers", e);
             errorMessage.show();
         }
 
 	}
-	public void setUpHistory(HistoryDatabase history) throws SQLException {
+	public void setUpHistory(HistoryDatabase history) {
 		//Treemaps come sorted.
-		TreeMap<String,String> historyResults = new TreeMap<>();
-		historyResults.putAll(history.getAllTimeStamps());
-		for(String key: historyResults.keySet()){
-			calculations.add(historyResults.get(key) + ": " + key);
-		}
+        try {
+            TreeMap<String, String> historyResults = new TreeMap<>();
+            historyResults.putAll(history.getAllTimeStamps());
+            for (String key : historyResults.keySet()) {
+                calculations.add(historyResults.get(key) + ": " + key);
+            }
+        }catch (SQLException e){
+            Dialog  errorMessage = new Dialog(DialogStyle.HEADLESS,"An error has occurred. Please show this to the developers", e);
+            errorMessage.show();
+        }
 	}
 }
