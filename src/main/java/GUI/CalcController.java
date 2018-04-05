@@ -111,4 +111,7 @@ public class CalcController {
             errorMessage.show();
         }
 	}
+	public void displayHelpMenu(){
+        System.out.println("Helping!");
+    }
 }
