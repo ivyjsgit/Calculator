@@ -120,22 +120,5 @@ public class CalcController {
 	}
 	public void displayHelpMenu(){
         System.out.println("Helping!");
-        String path= "CalcGUI.fxml";
-        if(System.getProperty("os.name").startsWith("Mac")) {
-            path="/"+ path;
-        }
-        //https://stackoverflow.com/a/27163802
-        try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(path));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.initModality(Modality.APPLICATION_MODAL);
-            stage.initStyle(StageStyle.UNDECORATED);
-            stage.setTitle("Help");
-            stage.setScene(new Scene(root1));
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }
