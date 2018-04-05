@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <Label layoutX="260.0" layoutY="36.0" text="Function formatting" />
+            <Label layoutX="206.0" layoutY="53.0" prefHeight="55.0" prefWidth="254.0" text="The format to define a function is &quot;Functionname var1 var2...var99 = mathequation&quot;" wrapText="true" />
+            <Label layoutX="206.0" layoutY="108.0" prefHeight="68.0" prefWidth="229.0" text="This program supports using the Javascript Math.*, along with any other Javascript math functions" wrapText="true" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

@@ -14,6 +14,7 @@ public class RunMeBeforeUploading {
 
         ArrayList<String> functions = new ArrayList<>();
         functions.add("areasquare s = Math.pow( s , 2 )");
+        functions.add("slope x1 x2 y1 y2 = (y2-y1)/(x2-x1)");
 
         for(String s:functions){
             databaseContainer.addFunction(s);
