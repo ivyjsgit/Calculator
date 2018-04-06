@@ -7,32 +7,18 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
-import java.awt.event.ActionEvent;
-import java.io.IOException;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.Map;
 import java.util.TreeMap;
-
-import javax.script.ScriptException;
-import javax.swing.*;
-
 
 import Databases.*;
 import DataStructures.*;
 import DataStructures.InputContainers.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 public class CalcController {
 

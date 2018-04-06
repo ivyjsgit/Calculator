@@ -9,10 +9,17 @@ public class WhitespaceRemover {
 		return equation.replaceAll(" ", "");
 	}
 
-	private static String listToString(ArrayList<String> list) {
+	public static String listToString(ArrayList<String> list) {
         String output = Arrays.toString(list.toArray()).replace("[", "").replace("]", "");
 		output.replaceAll(",", "");
 		return output;
+	}
+	
+	public static String changeToDouble(String string) {
+		if (!string.contains(".")) {
+			string = string + ".0";
+		}
+		return string;
 	}
 	
 	public static String removeExtraWhitespace(String function) {
@@ -38,6 +45,14 @@ public class WhitespaceRemover {
 			return str;
 		}
 		return str;
+	}
+	
+	public static String[] listToArray(ArrayList<String> list) {
+		String[] array = new String[list.size()];
+		for (int x = 0; x < list.size(); x++) {
+			array[x] = list.get(x);
+		}
+		return array;
 	}
 	
 }
