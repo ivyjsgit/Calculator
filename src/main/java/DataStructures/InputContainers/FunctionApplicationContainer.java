@@ -11,6 +11,7 @@ public class FunctionApplicationContainer {
 
 	private String functionApplication;
 	private DatabaseContainer databases;
+	private int skippedIndexes = 0;
 
 	public FunctionApplicationContainer(String functionApplication, DatabaseContainer databases) {
 		this.functionApplication = WhitespaceRemover.removeWhitespace(functionApplication);
@@ -22,16 +23,11 @@ public class FunctionApplicationContainer {
 		String functionEquation = getFunction();
 		ArrayList<String> newParameters = getParameters(functionApplication);
 		String result = databases.getFunctionApplication(functionEquation, newParameters);
-		/*
-		 * I need to add the ability to have a function application on a
-		 * function application.
-		 */
 		return result;
 	}
 
 	public ArrayList<String> getParameters(String str) throws ScriptException, SQLException {
 		String[] splittedString = str.split(" ");
-		printArray(splittedString);
 		splittedString = accountForParenthesis(splittedString);
 		printArray(splittedString);
 		ArrayList<String> result = new ArrayList<String>();
@@ -39,6 +35,8 @@ public class FunctionApplicationContainer {
 			String doubleVariable = WhitespaceRemover.changeToDouble(splittedString[x]);
 			result.add(doubleVariable);
 		}
+		System.out.println(str);
+		System.out.println(result.toString());
 		return result;
 	}
 
@@ -49,31 +47,39 @@ public class FunctionApplicationContainer {
 			if (str.contains("(")) {
 				String parameterWithFunction = grabAllParameters(x, splittedString);
 				FunctionApplicationContainer func = new FunctionApplicationContainer(parameterWithFunction, databases);
-				parameterWithFunction = func.run();
-				resultList.add(parameterWithFunction);
-				x = x + (parameterWithFunction.length() - 2);
+				String newParem = func.run();
+				resultList.add(newParem);
+				x = skippedIndexes - 1;
+				System.out.println("PAREM: " + parameterWithFunction);
 			} else {
 				resultList.add(str);
 			}
 		}
-		System.out.println(resultList.toString());
+		printArray(WhitespaceRemover.listToArray(resultList));
 		return WhitespaceRemover.listToArray(resultList);
 	}
 
 	private String grabAllParameters(int x, String[] splittedString) {
 		String result = "";
-		while (!splittedString[x].contains(")")) {
+		int count = 1;
+		result = result + " " + splittedString[x];
+		x++;
+		while (count != 0) {
+			if (splittedString[x].contains(")")) {
+				count --;
+			} else if (splittedString[x].contains("(")) {
+				count ++;
+			}
 			result = result + " " + splittedString[x];
 			x++;
 		}
-		result = result + " " + splittedString[x];
-		result = result.substring(2, result.length() - 1);
+		skippedIndexes = x;
+		result = WhitespaceRemover.removeWhitespaceAndParenthesis(result);
 		return result;
 	}
 
 	private void printArray(String[] splittedString) {
 		for (int x = 0; x < splittedString.length; x++) {
-			System.out.println(splittedString[x]);
 		}
 	}
 

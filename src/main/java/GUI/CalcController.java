@@ -78,14 +78,16 @@ public class CalcController {
 			calculations.add(result);
 			input.clear();
 		}catch (ArrayIndexOutOfBoundsException e){
+			e.printStackTrace();
 		    Dialog errorMessage = new Dialog(DialogType.ERROR, DialogStyle.HEADLESS, "An error has occurred", "Error, function is not defined. Please define the function");
             errorMessage.show();
         }catch (IndexOutOfBoundsException e) {
-            Dialog errorMessage = new Dialog(DialogType.ERROR, DialogStyle.HEADLESS, "An error has occurred", "Parameters do not match function definition. Please check your parameters.");
+        	e.printStackTrace();
+        	Dialog errorMessage = new Dialog(DialogType.ERROR, DialogStyle.HEADLESS, "An error has occurred", "Parameters do not match function definition. Please check your parameters.");
             errorMessage.show();
         }catch (Exception e){
             //https://github.com/Daytron/SimpleDialogFX
-            System.out.println(e);
+        	e.printStackTrace();
             Dialog  errorMessage = new Dialog(DialogStyle.HEADLESS,"An error has occurred. Please show this to the developers", e);
             errorMessage.show();
         }

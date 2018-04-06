@@ -11,7 +11,7 @@ public class WhitespaceRemover {
 
 	public static String listToString(ArrayList<String> list) {
         String output = Arrays.toString(list.toArray()).replace("[", "").replace("]", "");
-		output.replaceAll(",", "");
+		output = output.replaceAll(",", "");
 		return output;
 	}
 	
@@ -53,6 +53,23 @@ public class WhitespaceRemover {
 			array[x] = list.get(x);
 		}
 		return array;
+	}
+
+	public static String removeWhitespaceAndParenthesis(String result) {
+		result = removeWhitespace(result);
+		result = removeParenthesis(result);
+		return result;
+	}
+
+	private static String removeParenthesis(String str) {
+		if (str.charAt(0) == '(') {
+			str = removeParenthesis(str.substring(1));
+		} else if (str.charAt(str.length() - 1) == ')') {
+			str = removeParenthesis(str.substring(0, str.length() - 1));
+		} else {
+			return str;
+		}
+		return str;
 	}
 	
 }
