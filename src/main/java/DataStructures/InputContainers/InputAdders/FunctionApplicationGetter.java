@@ -36,7 +36,7 @@ public class FunctionApplicationGetter {
 		return Double.toString(result);
 	}
 
-	private String replace(String equation, String replacement, String variable) {
+	public static String replace(String equation, String replacement, String variable) {
 		int variableLength = variable.length();
 		int index = equation.indexOf(variable);
 		equation = equation.substring(0, index) + replacement + equation.substring(index + variableLength);

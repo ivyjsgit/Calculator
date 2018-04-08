@@ -35,8 +35,6 @@ public class FunctionApplicationContainer {
 			String doubleVariable = WhitespaceRemover.changeToDouble(splittedString[x]);
 			result.add(doubleVariable);
 		}
-		System.out.println(str);
-		System.out.println(result.toString());
 		return result;
 	}
 
@@ -50,7 +48,6 @@ public class FunctionApplicationContainer {
 				String newParem = func.run();
 				resultList.add(newParem);
 				x = skippedIndexes - 1;
-				System.out.println("PAREM: " + parameterWithFunction);
 			} else {
 				resultList.add(str);
 			}

@@ -50,7 +50,7 @@ public class CalcController {
 		  setUpHistory(history);
 
 		} catch (ClassNotFoundException | SQLException e) {
-            Dialog  errorMessage = new Dialog(DialogStyle.HEADLESS,"An error has occurred. Please show this to the developers", e);
+            Dialog errorMessage = new Dialog(DialogStyle.HEADLESS,"An error has occurred. Please show this to the developers", e);
             errorMessage.show();
 		}
 
@@ -77,17 +77,14 @@ public class CalcController {
 			String result = converter.run();
 			calculations.add(result);
 			input.clear();
-		}catch (ArrayIndexOutOfBoundsException e){
-			e.printStackTrace();
+		} catch (ArrayIndexOutOfBoundsException e){
 		    Dialog errorMessage = new Dialog(DialogType.ERROR, DialogStyle.HEADLESS, "An error has occurred", "Error, function is not defined. Please define the function");
             errorMessage.show();
-        }catch (IndexOutOfBoundsException e) {
-        	e.printStackTrace();
+        } catch (IndexOutOfBoundsException e) {
         	Dialog errorMessage = new Dialog(DialogType.ERROR, DialogStyle.HEADLESS, "An error has occurred", "Parameters do not match function definition. Please check your parameters.");
             errorMessage.show();
-        }catch (Exception e){
+        } catch (Exception e){
             //https://github.com/Daytron/SimpleDialogFX
-        	e.printStackTrace();
             Dialog  errorMessage = new Dialog(DialogStyle.HEADLESS,"An error has occurred. Please show this to the developers", e);
             errorMessage.show();
         }

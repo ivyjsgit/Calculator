@@ -38,7 +38,6 @@ public class EquationContainer {
 	private void changeToDouble() {
 		ArrayList<String> splittedArray = splitNums();
 		splittedArray = toDouble(splittedArray);
-		System.out.println(WhitespaceRemover.listToString(splittedArray));
 		equation = WhitespaceRemover.listToString(splittedArray);
 
 		
