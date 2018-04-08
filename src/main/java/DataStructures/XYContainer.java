@@ -27,6 +27,9 @@ public class XYContainer {
 		yval = (double) engine.eval(equationWithNewX);
 	}
 	
+	public double getX() {return xval;};
+	public double getY() {return yval;};
+	
 	@Override
 	public String toString() {
 		return "(" + Double.toString(xval) + ", " + Double.toString(yval) + ")";

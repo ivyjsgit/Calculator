@@ -7,7 +7,7 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 
-import DataStructures.WhitespaceRemover;
+import DataStructures.Parser;
 
 public class EquationContainer {
 
@@ -25,6 +25,7 @@ public class EquationContainer {
 		 * I got the below code for evaluating the result of a string from
 		 * https://stackoverflow.com/questions/2605032/is-there-an-eval-function-in-java
 		 */
+		
 		changeToDouble();
 		ScriptEngineManager manager = new ScriptEngineManager();
 		ScriptEngine engine = manager.getEngineByName("js");
@@ -38,7 +39,7 @@ public class EquationContainer {
 	private void changeToDouble() {
 		ArrayList<String> splittedArray = splitNums();
 		splittedArray = toDouble(splittedArray);
-		equation = WhitespaceRemover.listToString(splittedArray);
+		equation = Parser.listToString(splittedArray);
 
 		
 	}
