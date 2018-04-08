@@ -26,5 +26,10 @@ public class XYContainer {
 		ScriptEngine engine = manager.getEngineByName("js");
 		yval = (double) engine.eval(equationWithNewX);
 	}
+	
+	@Override
+	public String toString() {
+		return "(" + Double.toString(xval) + ", " + Double.toString(yval) + ")";
+	}
 
 }

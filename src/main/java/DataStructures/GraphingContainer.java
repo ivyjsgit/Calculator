@@ -34,15 +34,36 @@ public class GraphingContainer {
 	public ArrayList<XYContainer> run() throws ScriptException {
 		ArrayList<XYContainer> result = new ArrayList<XYContainer>();
 		
+		System.out.println(xrange + 1.0 + xrange);
+		System.out.println(precision + 0.0);
+		
+		
 		double index = (xrange + 1.0 + xrange) / (precision + 0.0);
 		
-		for (int x = -xrange; x < xrange; x += index) {
+		for (double x = -xrange; x < xrange; x += index) {
 			XYContainer xy = new XYContainer(equation, x);
 			result.add(xy);
 		}
 		XYContainer xy = new XYContainer(equation, xrange);
 		result.add(xy);
 		
+		return result;
+	}
+	
+	@Override
+	public String toString() {
+		String result = "";
+		ArrayList<XYContainer> running;
+		
+		try {
+			running = run();
+		} catch (ScriptException e) {
+			return "There is a ScriptException here";
+		}
+		
+		for (int x = 0; x < running.size(); x++) {
+			result = result + " " + running.get(x).toString();
+		}
 		return result;
 	}
 
