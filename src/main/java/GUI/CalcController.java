@@ -123,20 +123,28 @@ public class CalcController {
 		TextField y = new TextField();
 		y.setPromptText("Enter a y bound value. 10 -> -10 to 10");
 
-		GraphingContainer userGraph = new GraphingContainer(function.getText(), Integer.parseInt(x.getText()), Integer.parseInt(y.getText()), 10);
-		try {
-			result.addAll(userGraph.run());
-		} catch (ScriptException e) {
-			Dialog errorMessage = new Dialog(DialogType.ERROR, DialogStyle.HEADLESS, "Something went wrong with graphing.");
-			errorMessage.show();
-		}
-		for(XYContainer p : result){
-			Text ponint = new Text(300 + p.getX() * 30, 150 - p.getY(), ".");
-			root.getChildren().add(ponint);
+		boolean done = false;
 
+		while (!done) {
+			if (!function.getText().equals(null) && !x.getText().equals(null) && !y.getText().equals(null)) {
+				done = true;
+				GraphingContainer userGraph = new GraphingContainer(function.getText(), Integer.parseInt(x.getText()),
+						Integer.parseInt(y.getText()), 10);
+				try {
+					result.addAll(userGraph.run());
+				} catch (ScriptException e) {
+					Dialog errorMessage = new Dialog(DialogType.ERROR, DialogStyle.HEADLESS,
+							"Something went wrong with graphing.");
+					errorMessage.show();
+				}
+				for (XYContainer p : result) {
+					Text ponint = new Text(300 + p.getX() * 30, 150 - p.getY(), ".");
+					root.getChildren().add(ponint);
+				}
+			} else {
+				done = false;
 			}
 		}
-
 	}
 
 	public void setUpHistory(HistoryDatabase history) {
