@@ -123,6 +123,10 @@ public class CalcController {
 		TextField y = new TextField();
 		y.setPromptText("Enter a y bound value. 10 -> -10 to 10");
 
+		root.getChildren().add(function);
+		root.getChildren().add(x);
+		root.getChildren().add(y);
+
 		boolean done = false;
 
 		while (!done) {
