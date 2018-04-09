@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Menu?>
@@ -10,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CalcController">
+<BorderPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CalcController">
    <top>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
@@ -36,4 +40,7 @@
    <left>
       <Button fx:id="enter" mnemonicParsing="false" onAction="#calculate" prefHeight="125.0" prefWidth="75.0" text="Enter" BorderPane.alignment="CENTER" />
    </left>
+   <bottom>
+      <Button fx:id="graph" mnemonicParsing="false" onAction="#graphWindow" prefHeight="50.0" prefWidth="100.0" text="Graph" BorderPane.alignment="CENTER" />
+   </bottom>
 </BorderPane>
