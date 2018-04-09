@@ -3,7 +3,7 @@ package DataStructures;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class WhitespaceRemover {
+public class Parser {
 
 	public static String removeAllWhitespace(String equation) {
 		return equation.replaceAll(" ", "");

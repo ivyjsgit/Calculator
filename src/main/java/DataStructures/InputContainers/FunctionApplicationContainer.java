@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import javax.script.ScriptException;
 
-import DataStructures.WhitespaceRemover;
+import DataStructures.Parser;
 
 public class FunctionApplicationContainer {
 
@@ -14,7 +14,7 @@ public class FunctionApplicationContainer {
 	private int skippedIndexes = 0;
 
 	public FunctionApplicationContainer(String functionApplication, DatabaseContainer databases) {
-		this.functionApplication = WhitespaceRemover.removeWhitespace(functionApplication);
+		this.functionApplication = Parser.removeWhitespace(functionApplication);
 		this.databases = databases;
 	}
 
@@ -32,7 +32,7 @@ public class FunctionApplicationContainer {
 		printArray(splittedString);
 		ArrayList<String> result = new ArrayList<String>();
 		for (int x = 1; x < splittedString.length; x++) {
-			String doubleVariable = WhitespaceRemover.changeToDouble(splittedString[x]);
+			String doubleVariable = Parser.changeToDouble(splittedString[x]);
 			result.add(doubleVariable);
 		}
 		return result;
@@ -52,8 +52,8 @@ public class FunctionApplicationContainer {
 				resultList.add(str);
 			}
 		}
-		printArray(WhitespaceRemover.listToArray(resultList));
-		return WhitespaceRemover.listToArray(resultList);
+		printArray(Parser.listToArray(resultList));
+		return Parser.listToArray(resultList);
 	}
 
 	private String grabAllParameters(int x, String[] splittedString) {
@@ -71,7 +71,7 @@ public class FunctionApplicationContainer {
 			x++;
 		}
 		skippedIndexes = x;
-		result = WhitespaceRemover.removeWhitespaceAndParenthesis(result);
+		result = Parser.removeWhitespaceAndParenthesis(result);
 		return result;
 	}
 

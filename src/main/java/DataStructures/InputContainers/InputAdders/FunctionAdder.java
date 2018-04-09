@@ -2,7 +2,7 @@ package DataStructures.InputContainers.InputAdders;
 
 import java.sql.SQLException;
 
-import DataStructures.WhitespaceRemover;
+import DataStructures.Parser;
 import Databases.FunctionsDatabase;
 
 public class FunctionAdder {
@@ -13,7 +13,7 @@ public class FunctionAdder {
 	public FunctionAdder(String function, FunctionsDatabase functions) throws SQLException {
 		this.function = function;
 		this.functions = functions;
-		function = WhitespaceRemover.removeExtraWhitespace(function);
+		function = Parser.removeExtraWhitespace(function);
 		if (!checkFunctionInDatabase(function)) {
 			functions.insertFunction(function);
 		}

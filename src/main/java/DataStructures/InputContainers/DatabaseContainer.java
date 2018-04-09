@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import javax.script.ScriptException;
 
-import DataStructures.WhitespaceRemover;
+import DataStructures.Parser;
 import DataStructures.InputContainers.InputAdders.EquationAdder;
 import DataStructures.InputContainers.InputAdders.FunctionAdder;
 import DataStructures.InputContainers.InputAdders.FunctionApplicationGetter;
@@ -75,7 +75,7 @@ public class DatabaseContainer {
 	public String getEquation(String str) {
 		int index = str.indexOf("=") + 1;
 		str = str.substring(index, str.length());
-		str = WhitespaceRemover.removeAllWhitespace(str);
+		str = Parser.removeAllWhitespace(str);
 		return str;
 	}
 

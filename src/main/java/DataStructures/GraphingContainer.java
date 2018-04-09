@@ -34,10 +34,6 @@ public class GraphingContainer {
 	public ArrayList<XYContainer> run() throws ScriptException {
 		ArrayList<XYContainer> result = new ArrayList<XYContainer>();
 		
-		System.out.println(xrange + 1.0 + xrange);
-		System.out.println(precision + 0.0);
-		
-		
 		double index = (xrange + 1.0 + xrange) / (precision + 0.0);
 		
 		for (double x = -xrange; x < xrange; x += index) {
