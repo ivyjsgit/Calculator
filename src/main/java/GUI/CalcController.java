@@ -27,6 +27,8 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 
+import static com.github.daytron.simpledialogfx.dialog.DialogType.ERROR;
+
 public class CalcController {
 
 	@FXML
@@ -88,11 +90,11 @@ public class CalcController {
 			calculations.add(result);
 			input.clear();
 		} catch (ArrayIndexOutOfBoundsException e) {
-			Dialog errorMessage = new Dialog(DialogType.ERROR, DialogStyle.HEADLESS, "An error has occurred",
+			Dialog errorMessage = new Dialog(ERROR, DialogStyle.HEADLESS, "An error has occurred",
 					"Error, function is not defined. Please define the function");
 			errorMessage.show();
 		} catch (IndexOutOfBoundsException e) {
-			Dialog errorMessage = new Dialog(DialogType.ERROR, DialogStyle.HEADLESS, "An error has occurred",
+			Dialog errorMessage = new Dialog(ERROR, DialogStyle.HEADLESS, "An error has occurred",
 					"Parameters do not match function definition. Please check your parameters.");
 			errorMessage.show();
 		} catch (Exception e) {
@@ -105,50 +107,49 @@ public class CalcController {
 	}
 
 	public void graphWindow() {
-		Group root = new Group();
-		Scene scene = new Scene(root, 600, 300, Color.GHOSTWHITE);
-		ArrayList<XYContainer> result;
-
-		for (int r = 0; r < 600; r++) {
-			Text xAxis = new Text(r, 150, "-");
-			root.getChildren().add(xAxis);
-			Text yAxis = new Text(300, r, "|");
-			root.getChildren().add(yAxis);
-		}
-
-		TextField function = new TextField();
-		function.setPromptText("Form: x^2");
-		TextField x = new TextField();
-		x.setPromptText("Enter an x bound value. 10 -> -10 to 10");
-		TextField y = new TextField();
-		y.setPromptText("Enter a y bound value. 10 -> -10 to 10");
-
-		root.getChildren().add(function);
-		root.getChildren().add(x);
-		root.getChildren().add(y);
-
-		boolean done = false;
-
-		while (!done) {
-			if (!function.getText().equals(null) && !x.getText().equals(null) && !y.getText().equals(null)) {
-				done = true;
-				GraphingContainer userGraph = new GraphingContainer(function.getText(), Integer.parseInt(x.getText()),
-						Integer.parseInt(y.getText()), 10);
-				try {
-					result.addAll(userGraph.run());
-				} catch (ScriptException e) {
-					Dialog errorMessage = new Dialog(DialogType.ERROR, DialogStyle.HEADLESS,
-							"Something went wrong with graphing.");
-					errorMessage.show();
-				}
-				for (XYContainer p : result) {
-					Text ponint = new Text(300 + p.getX() * 30, 150 - p.getY(), ".");
-					root.getChildren().add(ponint);
-				}
-			} else {
-				done = false;
-			}
-		}
+//		Group root = new Group();
+//		Scene scene = new Scene(root, 600, 300, Color.GHOSTWHITE);
+//		ArrayList<XYContainer> result;
+//
+//		for (int r = 0; r < 600; r++) {
+//			Text xAxis = new Text(r, 150, "-");
+//			root.getChildren().add(xAxis);
+//			Text yAxis = new Text(300, r, "|");
+//			root.getChildren().add(yAxis);
+//		}
+//
+//		TextField function = new TextField();
+//		function.setPromptText("Form: x^2");
+//		TextField x = new TextField();
+//		x.setPromptText("Enter an x bound value. 10 -> -10 to 10");
+//		TextField y = new TextField();
+//		y.setPromptText("Enter a y bound value. 10 -> -10 to 10");
+//
+//		root.getChildren().add(function);
+//		root.getChildren().add(x);
+//		root.getChildren().add(y);
+//
+//		boolean done = false;
+//
+//		while (!done) {
+//			if (!function.getText().equals(null) && !x.getText().equals(null) && !y.getText().equals(null)) {
+//				done = true;
+//				GraphingContainer userGraph = new GraphingContainer(function.getText(), Integer.parseInt(x.getText()),
+//						Integer.parseInt(y.getText()), 10);
+//				try {
+//					result.addAll(userGraph.run());
+//				} catch (Exception e) {
+//					Dialog errorMessage = new Dialog(DialogStyle.HEADLESS, "Something went wrong with graphing.", e);
+//					errorMessage.show();
+//				}
+//				for (XYContainer p : result) {
+//					Text ponint = new Text(300 + p.getX() * 30, 150 - p.getY(), ".");
+//					root.getChildren().add(ponint);
+//				}
+//			} else {
+//				done = false;
+//			}
+//		}
 	}
 
 	public void setUpHistory(HistoryDatabase history) {
